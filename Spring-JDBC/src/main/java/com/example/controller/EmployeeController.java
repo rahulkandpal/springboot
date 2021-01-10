@@ -34,7 +34,7 @@ public class EmployeeController {
 		try { e = rs.findById(id); }catch(Exception t) {}
 		if(e.isPresent()) 
 			return e.get();
-		else return new Employee(0,"","","");		
+		else return new Employee(10,"","","");		
 	}
 
 	@GetMapping("/getAll") //http://localhost:8080/getAll?page=1&size=10
